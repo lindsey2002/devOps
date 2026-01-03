@@ -4,7 +4,7 @@ on: push
 
 jobs:
   init:
-    runs-on: ubuntu-v4.04
+    runs-on: ubuntu-latest
     steps:
       - run: echo 'hello Heredia'
       - run: echo $HOSTNAME
