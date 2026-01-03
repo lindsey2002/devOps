@@ -27,7 +27,7 @@ jobs:
           
       # Étape 5 : packaging
       - name: Packaging
-        run: tar -czf projet.tar.gz .
+        run: echo "Packaging rapide"
          
       # Étape 6 : fin du pipeline / job complet
       - name: Fin du pipeline
