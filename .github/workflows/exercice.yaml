@@ -1,0 +1,39 @@
+name: Demonstration CI
+
+on: push
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : initialisation
+      - name: Initialisation du job
+        run: |
+          echo "Initialisation du pipeline"
+          echo "Runner : $HOSTNAME"
+
+      # Étape 2 : récupération du code
+      - name: Récupération du code
+        uses: actions/checkout@v4
+
+      # Étape 3 : build
+      - name: Build
+        run: |
+          echo "Build du projet"
+          echo "Compilation simulée"
+
+      # Étape 4 : tests
+      - name: Tests
+        run: |
+          echo "Lancement des tests"
+          echo "Tous les tests sont OK"
+
+      # Étape 5 : packaging
+      - name: Packaging
+        run:  echo "Création du package"
+         
+      # Étape 6 : fin du pipeline / job complet
+      - name: Fin du pipeline
+        run: echo "Complete job"
+        
