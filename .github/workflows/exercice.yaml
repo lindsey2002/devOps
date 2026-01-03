@@ -1,7 +1,10 @@
 name: Demonstration CI
 
-on: push
-
+on: 
+  push:
+    branches:
+      - Lab-1
+  
 jobs:
   init:
     runs-on: ubuntu-latest
