@@ -19,19 +19,15 @@ jobs:
 
       # Étape 3 : build
       - name: Build
-        run: |
-          echo "Build du projet"
-          echo "Compilation simulée"
+        run: echo "Build du projet"
 
       # Étape 4 : tests
       - name: Tests
-        run: |
-          echo "Lancement des tests"
-          echo "Tous les tests sont OK"
-
+        run: echo "Lancement des tests"
+          
       # Étape 5 : packaging
       - name: Packaging
-        run:  echo "Création du package"
+        run: tar -czf projet.tar.gz .
          
       # Étape 6 : fin du pipeline / job complet
       - name: Fin du pipeline
