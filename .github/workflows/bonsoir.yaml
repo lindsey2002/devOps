@@ -10,5 +10,5 @@ jobs:
       STEP1 : "le code vient d'etre pousse sur github"
     steps:
       - run: echo 'bonsoir Heredia! Comment tu vas?'
-             echo "step1 = $step1"
+             echo "step1 = $STEP1"
       - run: echo $HOSTNAME
