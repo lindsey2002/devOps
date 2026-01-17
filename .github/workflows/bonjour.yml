@@ -8,3 +8,4 @@ jobs:
     steps:
       - run: echo 'hello Heredia'
       - run: echo $HOSTNAME
+      - run: echo "GODD JOB ${{ vars.STEP4}}"
