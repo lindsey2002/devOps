@@ -9,3 +9,4 @@ jobs:
       - run: echo 'hello Heredia'
       - run: echo $HOSTNAME
       - run: echo "GODD JOB ${{ vars.STEP4}}"
+      - run: echo " ${{vars.TAIST}}"
