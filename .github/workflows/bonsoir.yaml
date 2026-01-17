@@ -12,3 +12,4 @@ jobs:
       - run: echo 'bonsoir Heredia! Comment tu vas?'
              echo "step1 = $STEP1"
       - run: echo $HOSTNAME
+             echo"$STEP2"
