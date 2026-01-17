@@ -11,7 +11,8 @@ jobs:
     steps:
       - run: echo 'bonsoir Heredia! Comment tu vas?'
              echo "step1 = $STEP1"
+             echo " salut mon code est ${{secrets.TAIST}}"
       - run: echo $HOSTNAME
              echo"salut = ${{vars.STEP2}}"
              echo"step 3= ${{vars.HEREDIA}}"
-             echo " ${{secrets.TAIST}}"
+             
