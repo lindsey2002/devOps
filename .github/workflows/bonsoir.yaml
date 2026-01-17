@@ -13,3 +13,4 @@ jobs:
              echo "step1 = $STEP1"
       - run: echo $HOSTNAME
              echo"salut = ${{vars.STEP2}}"
+             echo"step 3= ${{vars.HEREDIA}}"  
